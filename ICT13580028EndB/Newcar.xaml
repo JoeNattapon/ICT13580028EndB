@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13580028EndB.Newcar"
+    Padding="10"
+    BackgroundColor="White">
+    <Grid>
+        <Image />
+        <ScrollView>
+            <Frame
+                Margin="30,30,30,30"
+                BackgroundColor="#B0FFFFFF"
+                CornerRadius="10"
+                VerticalOptions="Start">
+                <StackLayout
+                    Orientation="Vertical">
+                    <Label
+                        x:Name="titleLabel"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        HorizontalOptions="Center"
+                        Text="เพิ่มรถใหม่" />
+                    <Label
+                        FontSize="15"
+                        Text="ประเภทรถ"
+                        TextColor="Blue" />
+                    <Picker
+                        x:Name="typePicker"
+                        BackgroundColor="#B0FFFFFF" />
+                    <Label
+                        FontSize="15"
+                        Text="ยี่ห้อรถ"
+                        TextColor="Blue" />
+                    <Picker
+                        x:Name="branPicker"
+                        BackgroundColor="#B0FFFFFF" />
+                    <Label
+                        FontSize="15"
+                        Text="รุ่น"
+                        TextColor="Blue" />
+                    <Entry
+                        x:Name="classEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Keyboard="Default"
+                        Placeholder="รุ่น" />
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            Text="ปี"
+                            TextColor="Blue"
+                            VerticalTextAlignment="Center" />
+                        <Label
+                            x:Name="ageLabel"
+                            Text="1965"
+                            TextColor="Blue"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
+                    <Stepper
+                        x:Name="ageStepper"
+                        Maximum="2017"
+                        Minimum="1965"
+                        Increment="1"
+                        Value="1965" />
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            FontSize="15"
+                            Text="เลขไมล์ (กม.)"
+                            TextColor="Blue" />
+                        <Label
+                            x:Name="maiLabel"
+                            FontSize="15"
+                            Text="n/A"
+                            TextColor="Blue" />
+                        <Label
+                            FontSize="15"
+                            Text="กม."
+                            TextColor="Blue" />
+                    </StackLayout>
+                    <Slider
+                        x:Name="maiSlider"
+                        Maximum="200000"
+                        Minimum="0"
+                        Value="500" />
+                    <Label
+                        FontSize="15"
+                        Text="สี"
+                        TextColor="Blue" />
+                    <Picker
+                        x:Name="colorPicker"
+                        BackgroundColor="#B0FFFFFF" />
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            FontSize="15"
+                            Text="รถดีเลอร์"
+                            TextColor="Blue" />
+                        <Switch
+                            x:Name="cardEntry" />
+                    </StackLayout>
+                    <Label
+                        FontSize="14"
+                        Text="รายละเอียด"
+                        TextColor="Blue" />
+                    <Editor
+                        x:Name="partEditor"
+                        BackgroundColor="#B0FFFFFF"
+                        HeightRequest="100" />
+                    <Label
+                        FontSize="15"
+                        Text="ราคา"
+                        TextColor="Blue" />
+                    <Entry
+                        x:Name="priceEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Placeholder="ราคา" />
+                    <Label
+                        FontSize="15"
+                        Text="จังหวัด"
+                        TextColor="Blue" />
+                    <Picker
+                        x:Name="conPicker"
+                        BackgroundColor="#B0FFFFFF" />
+                    <Label
+                        FontSize="15"
+                        Text="เบอร์โทร"
+                        TextColor="Blue" />
+                    <Entry
+                        x:Name="phoneEntry"
+                        BackgroundColor="#B0FFFFFF"
+                        Keyboard="Telephone"
+                        Placeholder="เบอร์โทร" />
+                    <Grid
+                        Margin="0,5,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            x:Name="cancelButton"
+                            BackgroundColor="Red"
+                            Text="ยกเลิก"
+                            TextColor="White" />
+                        <Button
+                            x:Name="saveButton"
+                            Grid.Column="1"
+                            BackgroundColor="Green"
+                            Text="บันทึก"
+                            TextColor="White" />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>
