@@ -7,13 +7,7 @@ namespace ICT13580028EndB.Model
 {
     public class Product
     {
-        private Product product;
-
-        public Product(Product product)
-        {
-            this.product = product;
-        }
-
+       
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
