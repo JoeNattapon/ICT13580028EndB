@@ -10,7 +10,7 @@
         <ScrollView>
             <Frame
                 Margin="30,30,30,30"
-                BackgroundColor="#B0FFFFFF"
+                BackgroundColor="Silver"
                 CornerRadius="10"
                 VerticalOptions="Start">
                 <StackLayout
@@ -27,21 +27,21 @@
                         TextColor="Blue" />
                     <Picker
                         x:Name="typePicker"
-                        BackgroundColor="#B0FFFFFF" />
+                        BackgroundColor="Silver" />
                     <Label
                         FontSize="15"
                         Text="ยี่ห้อรถ"
                         TextColor="Blue" />
                     <Picker
                         x:Name="branPicker"
-                        BackgroundColor="#B0FFFFFF" />
+                        BackgroundColor="Silver" />
                     <Label
                         FontSize="15"
                         Text="รุ่น"
                         TextColor="Blue" />
                     <Entry
                         x:Name="classEntry"
-                        BackgroundColor="#B0FFFFFF"
+                        BackgroundColor="Silver"
                         Keyboard="Default"
                         Placeholder="รุ่น" />
                     <StackLayout
@@ -89,7 +89,7 @@
                         TextColor="Blue" />
                     <Picker
                         x:Name="colorPicker"
-                        BackgroundColor="#B0FFFFFF" />
+                        BackgroundColor="Silver" />
                     <StackLayout
                         Orientation="Horizontal">
                         <Label
@@ -105,7 +105,7 @@
                         TextColor="Blue" />
                     <Editor
                         x:Name="partEditor"
-                        BackgroundColor="#B0FFFFFF"
+                        BackgroundColor="Silver"
                         HeightRequest="100" />
                     <Label
                         FontSize="15"
@@ -113,7 +113,7 @@
                         TextColor="Blue" />
                     <Entry
                         x:Name="priceEntry"
-                        BackgroundColor="#B0FFFFFF"
+                        BackgroundColor="Silver"
                         Placeholder="ราคา" />
                     <Label
                         FontSize="15"
@@ -121,14 +121,14 @@
                         TextColor="Blue" />
                     <Picker
                         x:Name="conPicker"
-                        BackgroundColor="#B0FFFFFF" />
+                        BackgroundColor="Silver" />
                     <Label
                         FontSize="15"
                         Text="เบอร์โทร"
                         TextColor="Blue" />
                     <Entry
                         x:Name="phoneEntry"
-                        BackgroundColor="#B0FFFFFF"
+                        BackgroundColor="Silver"
                         Keyboard="Telephone"
                         Placeholder="เบอร์โทร" />
                     <Grid
